@@ -1,6 +1,4 @@
-package effectivejava.chapter2.item6;
-
-import java.util.Comparator;
+package chapter2.item6;
 
 // 코드 6-3 끔찍이 느리다! 객체가 만들어지는 위치를 찾았는가? (34쪽)
 public class Sum {

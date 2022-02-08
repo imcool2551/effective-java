@@ -1,4 +1,4 @@
-package effectivejava.chapter3.item10;
+package chapter3.item10;
 
 // 코드 10-6 전형적인 equals 메서드의 예 (64쪽)
 public final class PhoneNumber {

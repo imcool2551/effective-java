@@ -1,8 +1,9 @@
-package effectivejava.chapter3.item10.composition;
+package chapter3.item10.composition;
 
-import effectivejava.chapter3.item10.Color;
-import effectivejava.chapter3.item10.Point;
 
+import chapter3.item10.Point;
+
+import java.awt.*;
 import java.util.Objects;
 
 // 코드 10-5 equals 규약을 지키면서 값 추가하기 (60쪽)
@@ -22,14 +23,16 @@ public class ColorPoint {
         return point;
     }
 
-    @Override public boolean equals(Object o) {
+    @Override
+    public boolean equals(Object o) {
         if (!(o instanceof ColorPoint))
             return false;
         ColorPoint cp = (ColorPoint) o;
         return cp.point.equals(point) && cp.color.equals(color);
     }
 
-    @Override public int hashCode() {
+    @Override
+    public int hashCode() {
         return 31 * point.hashCode() + color.hashCode();
     }
 }

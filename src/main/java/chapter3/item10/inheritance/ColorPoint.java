@@ -1,7 +1,8 @@
-package effectivejava.chapter3.item10.inheritance;
+package chapter3.item10.inheritance;
 
-import effectivejava.chapter3.item10.Color;
-import effectivejava.chapter3.item10.Point;
+import chapter3.item10.Point;
+
+import java.awt.*;
 
 // Point에 값 컴포넌트(color)를 추가 (56쪽)
 public class ColorPoint extends Point {
@@ -13,7 +14,8 @@ public class ColorPoint extends Point {
     }
 
     // 코드 10-2 잘못된 코드 - 대칭성 위배! (57쪽)
-    @Override public boolean equals(Object o) {
+    @Override
+    public boolean equals(Object o) {
         if (!(o instanceof ColorPoint))
             return false;
         return super.equals(o) && ((ColorPoint) o).color == color;

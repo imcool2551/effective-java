@@ -1,4 +1,4 @@
-package effectivejava.chapter2.item6;
+package chapter2.item6;
 import java.util.regex.Pattern;
 
 // 값비싼 객체를 재사용해 성능을 개선한다. (32쪽)

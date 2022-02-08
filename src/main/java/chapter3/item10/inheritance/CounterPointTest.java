@@ -1,7 +1,8 @@
-package effectivejava.chapter3.item10.inheritance;
-import effectivejava.chapter3.item10.Point;
+package chapter3.item10.inheritance;
 
-import java.util.*;
+import chapter3.item10.Point;
+
+import java.util.Set;
 
 // CounterPoint를 Point로 사용하는 테스트 프로그램
 public class CounterPointTest {

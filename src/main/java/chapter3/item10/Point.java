@@ -1,4 +1,4 @@
-package effectivejava.chapter3.item10;
+package chapter3.item10;
 
 // 단순한 불변 2차원 정수 점(point) 클래스 (56쪽)
 public class Point {
@@ -10,7 +10,8 @@ public class Point {
         this.y = y;
     }
 
-    @Override public boolean equals(Object o) {
+    @Override
+    public boolean equals(Object o) {
         if (!(o instanceof Point))
             return false;
         Point p = (Point)o;
@@ -26,7 +27,8 @@ public class Point {
 //    }
 
     // 아이템 11 참조
-    @Override public int hashCode()  {
+    @Override
+    public int hashCode()  {
         return 31 * x + y;
     }
 }
