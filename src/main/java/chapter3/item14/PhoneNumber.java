@@ -8,10 +8,6 @@ import static java.util.Comparator.*;
 public final class PhoneNumber implements Comparable<PhoneNumber> {
     private final short areaCode, prefix, lineNum;
 
-    public static void main(String[] args) {
-        Comparator.comparing().thenComparing()
-    }
-
     public PhoneNumber(int areaCode, int prefix, int lineNum) {
         this.areaCode = rangeCheck(areaCode, 999, "지역코드");
         this.prefix   = rangeCheck(prefix,   999, "프리픽스");
