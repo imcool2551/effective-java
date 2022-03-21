@@ -1,4 +1,4 @@
-package chapter3.item17;
+package chapter4.item17;
 
 // 코드 17-1 불변 복소수 클래스 (106-107쪽)
 public final class Complex {

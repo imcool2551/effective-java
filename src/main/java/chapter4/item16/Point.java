@@ -1,4 +1,4 @@
-package chapter3.item16;
+package chapter4.item16;
 
 public class Point {
     private double x;
